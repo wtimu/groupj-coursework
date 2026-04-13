@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group J SACCO - Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="nav-wrap">
+    <a href="index.html" class="site-name">Group J <span>SACCO</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="admin.html" class="active">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-btns">
+      <a href="login.html" class="btn-out">Log out</a>
+    </div>
+  </div>
+</div>
+
+<img src="1018-1400x220.jpg" class="page-banner-img">
+
+<div class="page-header" style="margin-top:0;">
+  <div class="page-header-inner">
+    <h1>Admin Panel</h1>
+    <p>Manage members, loans, transactions, and announcements.</p>
+  </div>
+</div>
+
+<div class="dash-layout">
+
+  <div class="sidebar">
+    <div style="text-align:center;padding:0 20px 20px;">
+      <img src="unnamed.jpg" alt="Admin photo" style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid #3a4e5e;display:block;margin:0 auto 10px;">
+      <div style="color:#e2cfaa;font-size:0.85rem;font-weight:600;">Admin</div>
+      <div style="color:#7a9aaa;font-size:0.72rem;">System Administrator</div>
+    </div>
+    <div class="sidebar-title">Admin Menu</div>
+    <a href="admin.html" class="active">Overview</a>
+    <a href="#members">Member Management</a>
+    <a href="#loans">Loan Approvals</a>
+    <a href="#transactions">Transactions</a>
+    <a href="#announcements">Announcements</a>
+    <hr class="sidebar-divider">
+    <a href="reports.html">Reports</a>
+    <a href="login.html">Log out</a>
+  </div>
+
+  <div class="dash-main">
+
+    <div class="savings-summary">
+      <div class="sum-card">
+        <div class="label">Total Members</div>
+        <div class="value">4,218</div>
+      </div>
+      <div class="sum-card">
+        <div class="label">Pending Loans</div>
+        <div class="value">24</div>
+      </div>
+      <div class="sum-card">
+        <div class="label">Transactions Today</div>
+        <div class="value">87</div>
+      </div>
+    </div>
+
+    <!-- Member Management -->
+    <div class="section-box" id="members">
+      <h3>Member Management</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>Member ID</th>
+            <th>Full Name</th>
+            <th>Phone</th>
+            <th>Join Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="nakamya.png" style="width:36px;height:36px;border-radius:50%;object-fit:cover;"></td>
+            <td>VU-DIT-2507-1180-EVE</td><td>Nakamya Resty</td><td>+256 700 813600</td><td>Mar 2020</td>
+            <td><span class="badge badge-green">Active</span></td>
+            <td>
+              <a href="#" class="action-link view">View</a>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link delete">Suspend</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="Screenshot 2026-04-12 075609.png" alt="" style="width:36px;height:36px;border-radius:50%;object-fit:cover;"></td>
+            <td>VU-BSF-2507-1907-EVE</td><td>Maiso Gaius</td><td>+256 755 897966</td><td>Jan 2019</td>
+            <td><span class="badge badge-green">Active</span></td>
+            <td>
+              <a href="#" class="action-link view">View</a>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link delete">Suspend</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="Screenshot 2026-04-12 075609.png"  style="width:36px;height:36px;border-radius:50%;object-fit:cover;"></td>
+            <td>VU-BCS-2507-2085-EVE</td><td>Magawa Solomon</td><td>+256 756 456 789</td><td>Jun 2021</td>
+            <td><span class="badge badge-green">Active</span></td>
+            <td>
+              <a href="#" class="action-link view">View</a>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link delete">Suspend</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="Screenshot 2026-04-12 075609.png" style="width:36px;height:36px;border-radius:50%;object-fit:cover;"></td>
+            <td>VU-BSF-2507-1209-EVE</td><td>Nanndutu Joyce</td><td>+256 782 567 890</td><td>Oct 2023</td>
+            <td><span class="badge badge-yellow">Inactive</span></td>
+            <td>
+              <a href="#" class="action-link view">View</a>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link approve">Activate</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="benson.png"  style="width:36px;height:36px;border-radius:50%;object-fit:cover;"></td>
+            <td>VU-DIT-2507-1805-EVE</td><td>Musinguzi Benson</td><td>+256 703 678 901</td><td>Feb 2024</td>
+            <td><span class="badge badge-red">Suspended</span></td>
+            <td>
+              <a href="#" class="action-link view">View</a>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link approve">Restore</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Loan Approvals -->
+    <div class="section-box" id="loans">
+      <h3>Loan Approvals / Rejections</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Loan ID</th>
+            <th>Member</th>
+            <th>Amount (UGX)</th>
+            <th>Applied</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LN-2026-0881</td><td>Nakamya Resty</td><td>800,000</td><td>10 Apr 2026</td>
+            <td><span class="badge badge-yellow">Pending</span></td>
+            <td>
+              <a href="#" class="action-link approve">Approve</a>
+              <a href="#" class="action-link reject">Reject</a>
+              <a href="#" class="action-link view">View</a>
+            </td>
+          </tr>
+          <tr>
+            <td>LN-2026-0880</td><td>Wanume Timothy</td><td>1,500,000</td><td>09 Apr 2026</td>
+            <td><span class="badge badge-yellow">Pending</span></td>
+            <td>
+              <a href="#" class="action-link approve">Approve</a>
+              <a href="#" class="action-link reject">Reject</a>
+              <a href="#" class="action-link view">View</a>
+            </td>
+          </tr>
+          <tr>
+            <td>LN-2026-0879</td><td>Musinguzi Benson</td><td>500,000</td><td>08 Apr 2026</td>
+            <td><span class="badge badge-green">Approved</span></td>
+            <td><a href="#" class="action-link view">View</a></td>
+          </tr>
+          <tr>
+            <td>LN-2026-0876</td><td>Wakaperi Noah</td><td>2,000,000</td><td>05 Apr 2026</td>
+            <td><span class="badge badge-red">Rejected</span></td>
+            <td><a href="#" class="action-link view">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Transaction Management -->
+    <div class="section-box" id="transactions">
+      <h3>Transaction Management</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Ref No.</th>
+            <th>Member</th>
+            <th>Type</th>
+            <th>Amount (UGX)</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TXN-20260412-001</td><td>Nakamya Resty</td><td>Deposit</td><td>200,000</td><td>12 Apr 2026</td>
+            <td><span class="badge badge-green">Confirmed</span></td>
+            <td><a href="#" class="action-link view">View</a></td>
+          </tr>
+          <tr>
+            <td>TXN-20260411-008</td><td>Maiso Gaius</td><td>Repayment</td><td>150,000</td><td>11 Apr 2026</td>
+            <td><span class="badge badge-green">Confirmed</span></td>
+            <td><a href="#" class="action-link view">View</a></td>
+          </tr>
+          <tr>
+            <td>TXN-20260410-014</td><td>Nanndutu Joyce</td><td>Withdrawal</td><td>100,000</td><td>10 Apr 2026</td>
+            <td><span class="badge badge-yellow">Pending</span></td>
+            <td>
+              <a href="#" class="action-link approve">Approve</a>
+              <a href="#" class="action-link reject">Reject</a>
+            </td>
+          </tr>
+          <tr>
+            <td>TXN-20260409-022</td><td>Magawa Solomon</td><td>Deposit</td><td>300,000</td><td>09 Apr 2026</td>
+            <td><span class="badge badge-green">Confirmed</span></td>
+            <td><a href="#" class="action-link view">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Announcement Management -->
+    <div class="announce-form" id="announcements">
+      <h3>Post New Announcement</h3>
+      <div class="form-group">
+        <label>Announcement Title</label>
+        <input type="text" placeholder="e.g. Annual General Meeting Notice">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Type the full announcement message here..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Target Audience</label>
+        <select>
+          <option>All Members</option>
+          <option>Active Members Only</option>
+          <option>Members with Active Loans</option>
+          <option>Admins Only</option>
+        </select>
+      </div>
+      <button class="btn-gold">Post Announcement</button>
+    </div>
+
+    <div class="section-box">
+      <h3>Recent Announcements</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Posted By</th>
+            <th>Date</th>
+            <th>Audience</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Annual General Meeting Notice</td><td>Admin</td><td>08 Apr 2026</td><td>All Members</td>
+            <td>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link delete">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>System maintenance on 15 April</td><td>Admin</td><td>06 Apr 2026</td><td>All Members</td>
+            <td>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link delete">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Q1 2026 Dividend Distribution</td><td>Admin</td><td>01 Apr 2026</td><td>Active Members Only</td>
+            <td>
+              <a href="#" class="action-link edit">Edit</a>
+              <a href="#" class="action-link delete">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Group J SACCO</h4>
+      <p style="font-size:0.8rem;color:#8a9aaa;">Empowering members through transparent digital cooperative finance.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="login.html">Member Login</a>
+      <a href="register.html">Register</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="index.html#about">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#faq">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <span>Group J</span>
+      <span>+256 704 251030</span>
+      <span>Victoria University</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p> 2026 Group J SACCO. All rights reserved. | Licensed by Bank of Uganda</p>
+  </div>
+</footer>
+
+</body>
+</html>

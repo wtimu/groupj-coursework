@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group J SACCO - Member Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="nav-wrap">
+    <a href="index.html" class="site-name">Group J <span>SACCO</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="savings.html">Savings</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-btns">
+      <a href="login.html" class="btn-out">Log out</a>
+    </div>
+  </div>
+</div>
+
+<div class="dash-layout">
+
+  <div class="sidebar">
+    <div style="text-align:center;padding:0 20px 20px;">
+      <img src="nakamya.png"  style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid #3a4e5e;display:block;margin:0 auto 10px;">
+      <div style="color:#e2cfaa;font-size:0.85rem;font-weight:600;">Nakamya Resty</div>
+      <div style="color:#7a9aaa;font-size:0.72rem;">VU-DIT-2507-1180-EVE</div>
+    </div>
+    <div class="sidebar-title">Member Menu</div>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="savings.html">My Savings</a>
+    <a href="reports.html">Reports</a>
+    <hr class="sidebar-divider">
+    <a href="contact.html">Support</a>
+    <a href="login.html">Log out</a>
+  </div>
+
+  <div class="dash-main">
+    <div class="dash-greeting">
+      <h2>Welcome back, Nakamya Resty</h2>
+      <p>Member ID: VU-DIT-2507-1180-EVE | Last login: 11 April 2026, 09:14 AM</p>
+    </div>
+
+    <div class="summary-cards">
+      <div class="sum-card">
+        <div class="label">Total Savings</div>
+        <div class="value">UGX 4,850,000 </div>
+      </div>
+      <div class="sum-card">
+        <div class="label">Active Loan</div>
+        <div class="value">UGX 1,200,000</div>
+      </div>
+      <div class="sum-card">
+        <div class="label">Next Repayment</div>
+        <div class="value" style="font-size:1.1rem;">30 April 2026</div>
+      </div>
+    </div>
+
+    <div class="section-box">
+      <h3>Recent Transactions</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Amount (UGX)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10 Apr 2026</td>
+            <td>Monthly savings deposit</td>
+            <td>Deposit</td>
+            <td>200,000</td>
+            <td><span class="badge badge-green">Completed</span></td>
+          </tr>
+          <tr>
+            <td>05 Apr 2026</td>
+            <td>Loan repayment - April</td>
+            <td>Repayment</td>
+            <td>150,000</td>
+            <td><span class="badge badge-green">Completed</span></td>
+          </tr>
+          <tr>
+            <td>01 Apr 2026</td>
+            <td>Interest credit</td>
+            <td>Credit</td>
+            <td>18,500</td>
+            <td><span class="badge badge-green">Completed</span></td>
+          </tr>
+          <tr>
+            <td>28 Mar 2026</td>
+            <td>Withdrawal request</td>
+            <td>Withdrawal</td>
+            <td>100,000</td>
+            <td><span class="badge badge-yellow">Pending</span></td>
+          </tr>
+          <tr>
+            <td>15 Mar 2026</td>
+            <td>Monthly savings deposit</td>
+            <td>Deposit</td>
+            <td>200,000</td>
+            <td><span class="badge badge-green">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-box">
+      <h3>Notifications</h3>
+      <div class="notif-item">
+        <strong>Loan repayment reminder</strong>
+        <p>Your April 2026 loan repayment of UGX 150,000 is due on 30 April 2026.</p>
+        <div class="notif-time">12 April 2026 - 08:00 AM</div>
+      </div>
+      <div class="notif-item">
+        <strong>Deposit confirmed</strong>
+        <p>Your deposit of UGX 200,000 on 10 April 2026 has been successfully processed.</p>
+        <div class="notif-time">10 April 2026 - 02:15 PM</div>
+      </div>
+      <div class="notif-item">
+        <strong>General announcement</strong>
+        <p>The Annual General Meeting is scheduled for 20 May 2026 at Victoria University main hall at 10:00 AM. All members are encouraged to attend.</p>
+        <div class="notif-time">08 April 2026 - 09:00 AM</div>
+      </div>
+      <div class="notif-item">
+        <strong>Withdrawal under review</strong>
+        <p>Your withdrawal request of UGX 100,000 submitted on 28 March is currently under review.</p>
+        <div class="notif-time">28 March 2026 - 04:45 PM</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Group J SACCO</h4>
+      <p style="font-size:0.8rem;color:#8a9aaa;">Empowering members through transparent digital cooperative finance.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="login.html">Member Login</a>
+      <a href="register.html">Register</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="index.html#about">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#faq">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <span>Group J</span>
+      <span>+256 704 251030</span>
+      <span>Victoria University</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p> 2026 Group J SACCO. All rights reserved. | Licensed by Bank of Uganda</p>
+  </div>
+</footer>
+
+</body>
+</html>
